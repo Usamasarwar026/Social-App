@@ -177,12 +177,13 @@ const feedSlice = createSlice({
     });
 
     // updatepost
-    builder.addCase(updatepost.fulfilled, (state, action) => {
-      state.feed = state.feed.map((post) =>
-        post.id === action.payload.id ? action.payload : post,
-      );
-      state.updatePost = null;
-    });
+   // updatepost
+builder.addCase(updatepost.fulfilled, (state, action) => {
+  state.feed = state.feed.map((post) =>
+    post.id === action.payload.id ? { ...post, ...action.payload } : post,
+  );
+  state.updatePost = null;
+});
 
     // likepost – optimistic update
     builder.addCase(likepost.fulfilled, (state, action) => {
