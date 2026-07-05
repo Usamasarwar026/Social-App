@@ -59,7 +59,6 @@ function Login() {
             <button className="loginbutton" type="submit" disabled={loading}>
               {loading ? <span className="btn-spinner" /> : "Log In"}
             </button>
-            <span className="loginforget">Forget Password?</span>
             <button
               type="button"
               onClick={handleRegister}
