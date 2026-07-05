@@ -1,0 +1,189 @@
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1775ee !important;
+  letter-spacing: -0.5px;
+}
+
+.title span {
+  color: #333;
+}
+
+.navbar-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-icon-link {
+  color: #555 !important;
+  transition:
+    color 0.2s,
+    background 0.2s;
+  border-radius: 8px;
+  padding: 8px 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-link:hover {
+  color: #1775ee !important;
+  background: rgba(23, 117, 238, 0.08);
+}
+
+.login-signup-link {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1775ee !important;
+  border: 1.5px solid #1775ee;
+  transition: all 0.2s;
+}
+
+.login-signup-link:hover {
+  background: #1775ee;
+  color: white !important;
+}
+
+.signup-btn {
+  background: #1775ee;
+  color: white !important;
+}
+
+.signup-btn:hover {
+  background: #1558b0;
+  color: white !important;
+}
+
+.header-right-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.header-icon-only {
+  display: none;
+}
+
+.header-user-info {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  padding: 4px 6px;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.header-user-info:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: inherit;
+}
+
+.header-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: 1.5px solid #e74c3c;
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 8px;
+
+  width: 100%;
+  height: 42px;
+}
+
+.header-logout-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.header-logout-text {
+  display: inline;
+}
+
+@media (max-width: 991.98px) {
+  .header-right-nav {
+    flex-direction: row !important;
+    width: 100% !important;
+    margin-top: 8px;
+  }
+
+  .header-user-info {
+    display: none !important;
+  }
+
+  .header-icon-only {
+    display: none !important;
+  }
+
+  .header-logout-btn {
+    width: 100% !important;
+    height: 48px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-icon-only {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header-user-info {
+    display: flex;
+  }
+
+  .header-logout-btn {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+
+  .offcanvas-body form {
+    flex: 0 0 auto;
+  }
+
+  .offcanvas-body > .justify-content-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-grow: 0 !important;
+  }
+
+  .header-right-nav {
+    margin-left: auto;
+    width: auto !important;
+  }
+}

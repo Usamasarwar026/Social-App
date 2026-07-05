@@ -1,0 +1,119 @@
+.rightbar {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.rightbarwrapper {
+  padding: 8px;
+}
+
+.birthdaycontainer {
+  display: flex;
+  align-items: center;
+  background: #fff9e6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ffe08a;
+}
+
+.birthdayimg {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.birthdaytext {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.4;
+}
+
+.birthdaytext b {
+  font-weight: 700;
+  color: #333;
+}
+
+.rightbaradd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 12px 0;
+  object-fit: cover;
+}
+
+.rightbartitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.rightbarfriendlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.rightbarfriend {
+  width: 100%;
+  border-bottom: 1px solid #eef0f2;
+}
+
+.rightbarfriend:last-child {
+  border-bottom: none;
+}
+
+.rightbarfriend-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.rightbarfriend-link:hover {
+  background: #f0f2f5;
+}
+
+.rightbarprofileimg-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.rightbaronlinebadge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #44b700;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.rightbarusername {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1e21;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rightbarfriend-empty {
+  font-size: 13px;
+  color: #999;
+  padding: 6px 0;
+}

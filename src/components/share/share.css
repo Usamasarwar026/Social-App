@@ -1,0 +1,139 @@
+.share {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.sharewrapper {
+  padding: 16px;
+}
+
+.sharetop {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.shareprofileimg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #e0e0e0;
+}
+
+.shareinput {
+  flex: 1;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.shareinput:focus {
+  border-color: #1775ee;
+  background: #fafcff;
+}
+
+.sharehr {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 12px 0;
+}
+
+.sharebottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shareoptions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.shareoption {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.shareoption:hover {
+  background: #f0f2f5;
+}
+
+.sharoptiontext {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.sharebutton {
+  padding: 8px 24px;
+  background: #1775ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sharebutton:hover:not(:disabled) {
+  background: #1558b0;
+  transform: translateY(-1px);
+}
+
+.sharebutton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.share-spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 520px) {
+  .shareoption .sharoptiontext {
+    display: none;
+  }
+
+  .shareoption {
+    padding: 6px 8px;
+  }
+}
